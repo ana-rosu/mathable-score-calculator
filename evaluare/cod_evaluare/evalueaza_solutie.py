@@ -29,12 +29,10 @@ def compare_annotations_position_token(filename_predicted,filename_gt,verbose=0)
 	return points_positions, points_tokens
 
 #change this on your machine pointing to your results (txt files)
-predictions_path_root = "../fisiere_solutie/331_Alexe_Bogdan/"
+predictions_path_root = "../fisiere_solutie/331_Rosu_Ana_Maria/"
 
 #change this on your machine to point to the ground-truth test
-gt_path_root = "fake_test_gt/"
-
-
+gt_path_root = "../../antrenare/"
 
 def compare_annotations_score(filename_predicted,filename_gt,verbose=0):
 	p = open(filename_predicted,"rt")  	
@@ -63,8 +61,7 @@ def compare_annotations_score(filename_predicted,filename_gt,verbose=0):
 #change this to 1 if you want to print results at each turn
 verbose = 1
 total_points = 0
-for game in range(1,2):
-# change this for game in range(1,5):
+for game in range(1,5):
 	points_score = 0
 	for turn in range(1,51):
 		
